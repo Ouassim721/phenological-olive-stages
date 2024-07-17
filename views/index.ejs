@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/../images/logo.png" type="image/x-icon">
-    <title>Stades Phénologiques de l'Olivier</title>
     <link rel="stylesheet" href="/../public/bootstrap-5.3.3-dist/css/bootstrap.css">
     <link rel="stylesheet" href="/../public/font-awesome/css/all.min.css">
     <link rel="stylesheet" href="/../public/styles.css">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/footers/">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <title>Stades Phénologiques de l'Olivier</title>
 </head>
 <body class="light-mode">
     <div class="site">
@@ -28,13 +28,13 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                          <a class="nav-link active" aria-current="page" href="/index">Accueil</a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link" href="#">Definitions</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="#">Video</a>
+                          <a class="nav-link" href="/recolte">Récoltes</a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link" href="#">Agenda</a>
@@ -251,6 +251,9 @@
       });
       document.getElementById("navigateButton").onclick = function () {
         location.href = "/sign-in"; // Replace with your target page URL
+    }; 
+      document.getElementById("nav-tech").onclick = function () {
+        location.href = "/technology"; // Replace with your target page URL
     };
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script></body>

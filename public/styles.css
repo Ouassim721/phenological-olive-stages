@@ -25,6 +25,7 @@ body{
     background-image: url(/images/olive-background-1.jfif);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -215,3 +216,4 @@ footer i{
 .footer-links a ,footer p{
     color: var(--secondary-text-color);
 }
+/********************LA PAGE TECHNOLOGY********************************************/
