@@ -71,49 +71,49 @@
           </div>
       </nav>
     <!----------------------------------LA PARTIE SIDEBAR--------------------------------------------------------------------------------->
-    <div id="sidebar" class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary border" style="width: 280px; position: fixed; top: 75px; left: 0; height: 100%;">
+    <div id="sidebar" class="d-flex flex-column flex-shrink-0 p-5 bg-body-tertiary border" style="width: 280px; position: fixed; top: 75px; left: 0; height: calc(100% - 75px);">
         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-          <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+            <img src="/images/logo.png" width="75" height="75" alt="logo" class="bi pe-none me-2">
           <span class="fs-4">Récolte</span>
         </a>
         <hr>
         <ul class="nav nav-pills flex-column mb-auto">
           <li class="nav-item">
             <a href="#Méthodes" class="nav-link link-body-emphasis" aria-current="page">
-              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#"/></svg>
-              Méthodes
+                <i class="fa-solid fa-plant-wilt fs-5 me-3"></i>
+              <span>&nbsp;Méthodes</span>
             </a>
           </li>
           <li>
             <a href="#Calendrier" class="nav-link link-body-emphasis">
-              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#"/></svg>
-              Calendrier
+                <i class="fa-regular fa-calendar fs-5 me-3"></i>
+              <span>&nbsp;Calendrier</span>
 
             </a>
           </li>
           <li>
             <a href="#Techniques" class="nav-link link-body-emphasis">
-              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#"/></svg>
-              Techniques
+                <i class="fa-solid fa-gears fs-5 me-2"></i>
+              <span>Techniques</span>
             </a>
           </li>
           <li>
-            <a href="#" class="nav-link link-body-emphasis">
-              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
-              Products
+            <a href="#Traitement" class="nav-link link-body-emphasis">
+                <i class="fa-solid fa-bars-progress fs-5 me-2"></i>
+              <span>&nbsp;Traitement</span>
             </a>
           </li>
           <li>
-            <a href="#" class="nav-link link-body-emphasis">
-              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
-              Customers
+            <a href="#Transformation" class="nav-link link-body-emphasis">
+                <i class="fa-solid fa-arrows-spin fs-5 me-2"></i>
+              <span>&nbsp;Transformation</span>
             </a>
           </li>
         </ul>
         <hr>
-        <div class="dropdown">
+        <!-- <div class="dropdown">
           <a href="#" class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+            <img src="/images/logo.png" alt="" width="32" height="32" class="rounded-circle me-2">
             <strong>mdo</strong>
           </a>
           <ul class="dropdown-menu text-small shadow">
@@ -123,7 +123,7 @@
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Sign out</a></li>
           </ul>
-        </div>
+        </div> -->
       </div>
     <div class="recolte" style="margin-left: 300px;">
     <!--------------------------------- LE CONTENU ----------------------------------------------------------------------------->
@@ -271,20 +271,59 @@
                 </div>
             </div>
         </div>
+        <!--------------------------------- TRAITEMENT  ----------------------------------------------------------------------------->
+        <div class="mb-5" id="Traitement"></div>
+        <div class="mt-5">
+            <h2 class="text-center p-3">Traitement des Olives Récoltées</h2>
+             <div class="border p-3">
+                <h3>Nettoyage et Tri :</h3>
+                <p>Après la récolte, les olives sont nettoyées pour éliminer les impuretés telles que les feuilles et la saleté. Elles sont ensuite triées pour séparer les olives saines des fruits endommagés ou non mûrs.</p>
+                <div class="methodes">
+                    <h4>Méthodes</h4>
+                    <ul>
+                        <li>Utilisation de machines de nettoyage et de tri, souvent combinées avec un tri manuel pour assurer la qualité.</li>
+                    </ul>
+                </div>
+            </div>
+             <div class="border p-3">
+                <h3>Stockage et Transport :</h3>
+                <p>Les olives triées sont généralement stockées temporairement dans des entrepôts ou des cuves spécialement conçues avant d'être traitées. Le transport vers les usines de transformation doit être rapide pour éviter la détérioration des fruits.</p>
+                <div class="exemples">
+                    <h4>Conditions Idéales :</h4>
+                    <ul>
+                        <li>Température contrôlée et atmosphère modifiée pour prolonger la durée de vie des olives fraîchement récoltées.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--------------------------------- Transformation des Olives  ----------------------------------------------------------------------------->
+        <div class="mb-5" id="Transformation"></div>
+        <div class="mt-5">
+            <h2 class="text-center p-3">Transformation des Olives</h2>
+             <div class="border p-3">
+                <h3>Huile d'Olive :</h3>
+                <p>Processus d'extraction de l'huile d'olive à partir des fruits récoltés. Cela comprend le broyage des olives en pâte, suivi de la séparation de l'huile et de l'eau par pressage ou centrifugation.</p>
+                <div class="methodes">
+                    <h4>Types d'Extraction :</h4>
+                    <ul>
+                        <li>Extraction à froid pour préserver la qualité et les propriétés nutritionnelles de l'huile.</li>
+                    </ul>
+                </div>
+            </div>
+             <div class="border p-3">
+                <h3>Olives de Table :</h3>
+                <p>Les olives destinées à la consommation directe passent par différents processus de saumurage ou de séchage pour améliorer leur goût et leur conservation.</p>
+                <div class="exemples">
+                    <h4>Variétés et Préparations :</h4>
+                    <ul>
+                        <li>Olives vertes, noires, farcies, etc., avec des recettes traditionnelles et modernes.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
       </div>
     </div>
-      <script src="/scripts/main.js">
-    //     document.getElementById('lightMode').addEventListener('click', function () {
-    //         document.body.removeAttribute('data-theme');
-    //     });
-    
-    //     document.getElementById('darkMode').addEventListener('click', function () {
-    //         document.body.setAttribute('data-theme', 'dark');
-    //     });
-    //     document.getElementById("navigateButton").onclick = function () {
-    //       location.href = "/sign-in"; // Replace with your target page URL
-    //   }; 
-    </script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script></body>
-</body>
+      <script src="/scripts/main.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   </body>
 </html>
