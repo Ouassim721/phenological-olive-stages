@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" class="recolte-html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
     <title>Recoltes</title>
 </head>
-<body>
-    <div class="main" id="Accueil-tech" style="background-image: url(/images/machine.jpg);">
+<body class="recolte-body">
+    <!-- <div class="main" id="Accueil-recolte" style="background-image: url(/images/machine.jpg);"> -->
         <!-- La bar de Navigation -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary">
           <div class="container-fluid">
@@ -70,17 +70,68 @@
               </div>
           </div>
       </nav>
-      <div class="titre">
-        <h4>Bienvenue Avec YouCode</h4>
-        <h1>Stades Phénologiques de l'Olivier</h1>
-        <h5>Notre page web avec tout ce que vous cherchez à propos le developpement des olives</h5>
+    <!----------------------------------LA PARTIE SIDEBAR--------------------------------------------------------------------------------->
+    <div id="sidebar" class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary border" style="width: 280px; position: fixed; top: 75px; left: 0; height: 100%;">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+          <span class="fs-4">Récolte</span>
+        </a>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+            <a href="#Méthodes" class="nav-link link-body-emphasis" aria-current="page">
+              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#"/></svg>
+              Méthodes
+            </a>
+          </li>
+          <li>
+            <a href="#Calendrier" class="nav-link link-body-emphasis">
+              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#"/></svg>
+              Calendrier
+
+            </a>
+          </li>
+          <li>
+            <a href="#Techniques" class="nav-link link-body-emphasis">
+              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#"/></svg>
+              Techniques
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-body-emphasis">
+              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
+              Products
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-body-emphasis">
+              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
+              Customers
+            </a>
+          </li>
+        </ul>
+        <hr>
+        <div class="dropdown">
+          <a href="#" class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+            <strong>mdo</strong>
+          </a>
+          <ul class="dropdown-menu text-small shadow">
+            <li><a class="dropdown-item" href="#">New project...</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Sign out</a></li>
+          </ul>
+        </div>
       </div>
-        <div class="buttons">
-         <button type="button" class="btn btn-success btn-lg">Découvrez plus</button>
-        </div>
-        </div>
-      <div class="container border mt-5 d-flex justify-content-center flex-column">
-        <div>
+    <div class="recolte" style="margin-left: 300px;">
+    <!--------------------------------- LE CONTENU ----------------------------------------------------------------------------->
+      <div class="container border border-primary mt-4 d-flex justify-content-center flex-column">
+
+    <!--------------------------------- METHODES DE RECOLTES ----------------------------------------------------------------------------->
+    <div class="mb-5" id="Méthodes"></div>
+        <div class="mt-5">
             <h2 class="text-center p-3">Méthodes de Récolte</h2>
              <div class="border p-3">
                 <h3>Récolte Manuelle</h3>
@@ -137,30 +188,73 @@
                 </div>
             </div>
         </div>
-        <div>
+    <!--------------------------------- CALENDRIER DE RECOLTE ----------------------------------------------------------------------------->
+    <div class="mb-5" id="Calendrier"></div>
+    <div class="mt-5">
             <h2 class="text-center p-3">Calendrier de Récolte</h2>
              <div class="border p-3">
-                <h3>Moment de la Récolte :</h3>
-                <p>En général, la récolte des olives se fait entre les mois d'octobre et de janvier. Mais tout dépend de la période de l'année à laquelle les fruits arrivent à maturité : d'une zone géographique à une autre, la période de récolte peut être très différente en raison de l'ensoleillement et des conditions d'exposition.</p>
+                <div class="calendrier-recolte-list">
+                    <h4>Moment de la Récolte :</h4>
+                    <ul>
+                        <li>Généralement entre septembre et novembre, selon les variétés et les régions.</p>
+                        <li>Les olives doivent être récoltées lorsqu'elles atteignent un certain degré de maturité, ce qui peut varier selon l'utilisation (huile ou olives de table).</p>
+                    </ul>
+                </div>
+                <div class="calendrier-recolte-list">
+                    <h4>Indicateurs de Maturité :</h4>
+                    <ul>
+                        <li>Changement de couleur des olives (du vert au noir).</li>
+                        <li>Texture et fermeté des fruits.</li>
+                    </ul>
+                </div>
+                <div class="calendrier-recolte-list">
+                    <h4>Conditions Météorologiques :</h4>
+                    <ul>
+                        <li>Les conditions sèches sont idéales pour la récolte.</li>
+                        <li>Éviter les jours de pluie, car cela peut affecter la qualité des olives.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--------------------------------- TECHNIQUE TRAD/ MOD----------------------------------------------------------------------------->
+        <div class="mb-5" id="Techniques"></div>
+        <div class="mt-5">
+            <h2 class="text-center p-3">Techniques Traditionnelles vs. Modernes</h2>
+             <div class="border p-3">
+                <h3>Techniques Traditionnelles :</h3>
+                <p>Pratiques transmises de génération en génération, souvent utilisées dans les petites exploitations.</p>
+                <div class="exemples">
+                    <h4>Exemples :</h4>
+                    <ul>
+                        <li>Utilisation de bâtons pour secouer les branches et faire tomber les olives.</li>
+                        <li>Récolte à la main avec des paniers pour recueillir les olives.</li>
+                    </ul>
+                </div>
                 <div class="avantage">
                     <h4>Avantages :</h4>
                     <ul>
-                        <li>Permet une sélection précise des olives mûres.</li>
-                        <li>Moins de dommages aux fruits et à l'arbre.</li>
-                        <li>Pratique pour les petites exploitations et les zones difficiles d'accès.</li>
+                        <li>Respect des traditions locales.</li>
+                        <li>Moins de mécanisation, ce qui peut être bénéfique pour l'environnement.</li>
                     </ul>
                 </div>
                 <div class="inconvenient">
                     <h4>Inconvénients :</h4>
                     <ul>
-                        <li>Travail intensif et coûteux en main-d'œuvre.</li>
-                        <li>Temps de récolte prolongé.</li>
+                        <li>Moins efficaces pour de grandes surfaces.</li>
+                        <li>Plus laborieux et coûteux en main-d'œuvre.</li>
                     </ul>
                 </div>
             </div>
              <div class="border p-3">
-                <h3>Récolte Mécanique</h3>
-                <p>Utilisation de machines spécialement conçues, comme des secoueurs ou des récolteuses de olives.</p>
+                <h3>Techniques Modernes :</h3>
+                <p>Utilisation de technologies avancées pour améliorer l'efficacité de la récolte.</p>
+                <div class="exemples">
+                    <h4>Exemples :</h4>
+                    <ul>
+                        <li>Machines à secouer qui font vibrer les branches pour faire tomber les olives.</li>
+                        <li>Robots et drones pour surveiller les récoltes et optimiser le processus.</li>
+                    </ul>
+                </div>
                 <div class="avantage">
                     <h4>Avantages :</h4>
                     <ul>
@@ -171,41 +265,25 @@
                 <div class="inconvenient">
                     <h4>Inconvénients :</h4>
                     <ul>
-                        <li>Peut endommager les fruits et les arbres si mal utilisé.</li>
-                        <li>Coût initial élevé pour l'achat des équipements.</li>
-                    </ul>
-                </div>
-            </div>
-             <div class="border p-3">
-                <h3>Méthodes Semi-Mécaniques</h3>
-                <p>Combinaison de techniques manuelles et mécaniques, utilisant des outils comme des peignes électriques pour faciliter la récolte.</p>
-                <div class="avantage">
-                    <h4>Avantages :</h4>
-                    <ul>
-                        <li>Équilibre entre efficacité et soin des olives.</li>
-                        <li>Moins de stress sur les arbres par rapport à des méthodes entièrement mécaniques.</li>
-                    </ul>
-                </div>
-                <div class="inconvenient">
-                    <h4>Inconvénients :</h4>
-                    <ul>
-                        <li>Combinaison des inconvénient des deux précédents.</li>
+                        <li>Coût élevé des équipements.</li>
+                        <li>Risque de dommages aux arbres et aux fruits si mal utilisés.</li>
                     </ul>
                 </div>
             </div>
         </div>
       </div>
-      <script>
-        document.getElementById('lightMode').addEventListener('click', function () {
-            document.body.removeAttribute('data-theme');
-        });
+    </div>
+      <script src="/scripts/main.js">
+    //     document.getElementById('lightMode').addEventListener('click', function () {
+    //         document.body.removeAttribute('data-theme');
+    //     });
     
-        document.getElementById('darkMode').addEventListener('click', function () {
-            document.body.setAttribute('data-theme', 'dark');
-        });
-        document.getElementById("navigateButton").onclick = function () {
-          location.href = "/sign-in"; // Replace with your target page URL
-      }; 
+    //     document.getElementById('darkMode').addEventListener('click', function () {
+    //         document.body.setAttribute('data-theme', 'dark');
+    //     });
+    //     document.getElementById("navigateButton").onclick = function () {
+    //       location.href = "/sign-in"; // Replace with your target page URL
+    //   }; 
     </script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script></body>
 </body>
