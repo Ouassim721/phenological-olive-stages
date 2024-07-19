@@ -16,7 +16,7 @@
       
     <!--------------------------LA PARTIE MAIN---------------------------------------------------------------------------->
     <!-- La bar de Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary position-fixed" style="width: 100%; z-index: 999;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary position-fixed" style="width: 100%; z-index: 999; top: 0;">
       <div class="container-fluid">
           <a class="navbar-brand d-flex justify-content-between align-items-center" href="#">
               <img src="../images/logo.png" alt="Logo du site" width="80" height="80" class="d-inline align-top">
@@ -26,6 +26,7 @@
               <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarsExample05">
+              <div class="container-fluid d-flex justify-content-between align-items-center">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
                       <a class="nav-link active" aria-current="page" href="/index">Accueil</a>
@@ -42,6 +43,8 @@
                   <li class="nav-item">
                       <a class="nav-link" href="/contact">Contactez-nous</a>
                   </li>
+                  </ul>
+                  <ul class="navbar-nav me-5 mb-2 mb-lg-0">
                   <button type="button" class="btn btn-warning py-2 me-2" id="navigateButton">Connexion</button>
                   <div class="dropdown">
                       <button class="btn btn-dark dropdown-toggle" type="button" id="themeDropdown" data-bs-toggle="dropdown" aria-expanded="false">
@@ -62,7 +65,8 @@
                           </li>
                       </ul>
                   </div>
-              </ul>
+                </ul>
+              </div>
           </div>
       </div>
   </nav>
@@ -143,7 +147,7 @@
           <div class="tech">
             <div class="tech-content">
                 <h2 class="tech-header">Les Différents Technologies et machines de recoltes d'olives</h2>
-                <button type="button" class="btn btn-secondary py-2">Savoir plus</button>
+                <button type="button" class="btn btn-secondary py-2" id="recolteButton">Savoir plus</button>
             </div>
           </div>
         <!--------------------------LA PARTIE CARDS---------------------------------------------------------------------------->
@@ -236,12 +240,11 @@
             </footer>
           </div>
     </div>
+    
   <!-----------------------------------LA PARTIE SCRIPT------------------------------------------------------------------->
+
   <script src="/scripts/main.js"></script>
-  <script src="/public/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </div>
 </body>
 </html>

@@ -209,6 +209,21 @@ footer i{
     color: var(--secondary-text-color);
 }
 /********************LA PAGE recolte********************************************/
+#sidebar{
+    background-color: var(--bg-color) !important;
+}
+#sidebar span , #sidebar i{
+    color: var(--text-color);
+}
+#Méthodes p , #Méthodes li{
+    color: var(--secondary-text-color);
+}
+#Méthodes h4{
+    color: var(--text-color);
+}
+#Méthodes h3{
+    color: var(--accent-color);
+}
 /********************LA PAGE contact********************************************/
 #contact h6{
     color: rgb(104, 208, 0);
