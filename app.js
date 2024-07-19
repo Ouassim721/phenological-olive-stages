@@ -14,6 +14,10 @@ app.get('/recolte', (req, res) => {
     res.render('recolte');
   });
 //------------------------------------------------------------//
+app.get('/contact', (req, res) => {
+    res.render('contact');
+  });
+//------------------------------------------------------------//
 app.set('view engine', 'ejs');
 
 app.set('views', path.join(__dirname, 'views')); // This should point to the views folder
