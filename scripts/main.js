@@ -1,22 +1,3 @@
-//////////////////////////// LA PARTIE DE SIDEBAR /////////////////////////////////////////////////////////
-const specificDiv = document.querySelector('#sidebar');
-const sideBarLinks = specificDiv.querySelectorAll('.nav-link');
-
-sideBarLinks.forEach(sideBarLink => {
-    sideBarLink.addEventListener('click', () => {
-
-        const currentActive = specificDiv.querySelector('.nav-link.active');
-        if (currentActive) {
-            currentActive.classList.remove('active');
-            currentActive.classList.add('link-body-emphasis');
-        }
-
-        sideBarLink.classList.remove('link-body-emphasis');
-        sideBarLink.classList.add('active');
-    });
-});
-
-
 //////////////////////////// FIN DE LA PARTIE DE SIDEBAR ////////////////////////////////////////////////////
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -42,6 +23,26 @@ document.addEventListener('DOMContentLoaded', function() {
     });    
 });    
 
+//////////////////////////// LA PARTIE DE SIDEBAR /////////////////////////////////////////////////////////
+const specificDiv = document.querySelector('#sidebar');
+const sideBarLinks = specificDiv.querySelectorAll('.nav-link');
+
+sideBarLinks.forEach(sideBarLink => {
+    sideBarLink.addEventListener('click', () => {
+
+        const currentActive = specificDiv.querySelector('.nav-link.active');
+        if (currentActive) {
+            currentActive.classList.remove('active');
+            currentActive.classList.add('link-body-emphasis');
+        }
+
+        sideBarLink.classList.remove('link-body-emphasis');
+        sideBarLink.classList.add('active');
+    });
+});
+
+
+
 document.getElementById("navigateButton").onclick = function () {
   location.href = "/sign-in";  
 };  
@@ -50,4 +51,30 @@ document.getElementById("recolteButton").onclick = function () {
 };   
 document.getElementById("voir-agenda").onclick = function () {
   location.href = "/agenda";  
+};    
+document.getElementById("production").onclick = function () {
+  location.href = "/production";  
 };   
+/////////////////////////////////////////////////////////////////////////
+document.addEventListener('DOMContentLoaded', function () {
+  const sections = document.querySelectorAll('section');
+  const navLi = document.querySelectorAll('nav ul li a');
+
+  window.onscroll = () => {
+      var current = "";
+
+      sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          if (pageYOffset >= sectionTop - 60) {
+              current = section.getAttribute("id");
+          }
+      });
+
+      navLi.forEach(li => {
+          li.classList.remove("active");
+          if (li.getAttribute("href").includes(current)) {
+              li.classList.add("active");
+          }
+      });
+  };
+});

@@ -10,12 +10,24 @@ const indexRouter = require('./routes/index');
 
 app.use('/', indexRouter);
 //------------------------------------------------------------//
+app.get('/def', (req, res) => {
+    res.render('def');
+  });
+//------------------------------------------------------------//
 app.get('/recolte', (req, res) => {
     res.render('recolte');
   });
 //------------------------------------------------------------//
 app.get('/contact', (req, res) => {
     res.render('contact');
+  });
+//------------------------------------------------------------//
+app.get('/production', (req, res) => {
+    res.render('production');
+  });
+//------------------------------------------------------------//
+app.get('/stade', (req, res) => {
+    res.render('stade');
   });
 //------------------------------------------------------------//
 app.set('view engine', 'ejs');
