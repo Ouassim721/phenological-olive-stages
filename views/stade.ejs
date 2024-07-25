@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/../images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/../public/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/../public/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="/../public/styles.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/footers/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Stades</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary position-absolute" style="width: 100%; z-index: 999; top: 0;">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex justify-content-between align-items-center" href="#">
+                <img src="../images/logo.png" alt="Logo du site" width="80" height="80" class="d-inline align-top">
+                <h1 class="f">OliZen</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExample05">
+                <div class="container-fluid d-flex justify-content-between align-items-center">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/index">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/def">Definitions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/recolte">Récolte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/stade">Stades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/production">Production</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contactez-nous</a>
+                    </li>
+                    </ul>
+                    <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+                    <button type="button" class="btn btn-warning py-2 me-2" id="navigateButton">Déconnexion</button>
+                    <div class="dropdown">
+                        <button class="btn btn-dark dropdown-toggle" type="button" id="themeDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            Theme
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="themeDropdown">
+                            <li>
+                                <a class="dropdown-item d-flex justify-content-between align-items-center" href="#" id="lightMode">
+                                    <!-- Light Mode Icon -->
+                                    <span>Light Mode</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex justify-content-between align-items-center" href="#" id="darkMode">
+                                    <!-- Dark Mode Icon -->
+                                    <span>Dark Mode</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                  </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="main" id="stade-main">
+        <!-- Le partie central du titre -->
+            <div class="titre">
+              <h1>Stades Phénologiques de l'Olivier</h1>
+              <h5>Partie de Developpement et l'agenda</h5>
+            </div>
+         <div class="buttons">
+          <button type="button" class="btn btn-success btn-lg">Découvrez plus</button>
+         </div>
+        </div>
+        <div class="introduction-global container" style="margin: 150px auto;">
+            <div class="border-top m-auto" style="height: 1.5px; width: 50%;"></div>
+            <div>
+                <h3 class="text-center fw-bold fs-2 my-5">Introduction Globale</h3>
+                <p class="text-center">Au Maroc, la culture de l’olivier occupe une place extrêmement importante dans le tissu agricole du pays avec environ 5% du PIB agricole et elle représente ainsi la deuxième spéculation agricole derrière les céréales. La culture de l’olivier constitue une activité économique importante sur le plan national, avec une superficie de l’ordre de 1 045 000 ha, et une production allant jusqu’à 2 millions de tonnes en 2018. Le secteur assure actuellement une activité agricole intense permettant de générer plus de 15 millions de journées de travail/an, soit l’équivalent de 70 000 emplois permanents.</p>
+                <p class="text-center mb-5">La production est valorisée en deux produits majeurs au Maroc : la production de l’huile d’olive et la production des olives de table. Actuellement, la production moyenne est de 160 000 tonnes d'huile d'olive et 100 000 tonnes d'olives de table. Les productions oléicoles contribuent activement à l’équilibre de la balance commerciale, sachant que le Maroc est le 2 ème exportateur mondial des olives de table, après l’Espagne, avec une moyenne annuelle de près de 70 000 t. </p>
+            </div>
+            <div class="border-top m-auto" style="height: 1.5px; width: 50%;"></div>
+        </div>
+        <!--------------------------LA PARTIE DE STADE  ----------------------------------------------------------------------------->
+        <header class="stade-header text-center my-5">
+            <h1>Étapes du Croissance des Olives</h1>
+        </header>
+        <nav id="sticky-nav">
+            <ul>
+                <li class="border-end"><a href="#reveil">Réveil végétatif</a></li>
+                <li class="border-end"><a href="#formation">Formation des grappes florales</a></li>
+                <li class="border-end"><a href="#differenciation">Différenciation des corolles</a></li>
+                <li class="border-end"><a href="#floraison">Floraison</a></li>
+                <li class="border-end"><a href="#nouaison">Nouaison</a></li>
+                <li class="border-end"><a href="#grossissement">Grossissement</a></li>
+                <li class="border-end"><a href="#maturite">Maturité</a></li>
+                <li id="ag" style="background-color: #aa3321;"><a href="#agenda">Agenda</a></li>
+            </ul>
+        </nav>
+        <!------------------------LA PARTIE MAIN------------------------------------------------------->
+        <main>
+            <div class="croissance">
+            <h2>Réveil végétatif</h2>
+            <section id="reveil">
+                <div class="partie-gauche">
+                    <p class="text-secondary">Le réveil végétatif des oliviers est une étape cruciale dans le cycle de vie de l'arbre. Cette phase correspond à la fin de la période de dormance hivernale et au début de la nouvelle saison de croissance</p>
+                    <h4>Réactivation Métabolique</h4>
+                    <ul>
+                        <li class="text-secondary">Les températures augmentent, ce qui stimule les processus métaboliques de l'arbre.</li>
+                        <li class="text-secondary">La photosynthèse reprend avec l'allongement des jours et l'augmentation de la lumière solaire.</li>
+                    </ul>
+                    <h4>Débourrement</h4>
+                    <ul>
+                        <li class="text-secondary">Les bourgeons commencent à se gonfler et à se développer.</li>
+                        <li class="text-secondary">Les nouvelles feuilles émergent, ce qui permet à l'arbre de capter plus de lumière pour la photosynthèse.</li>
+                    </ul>
+                    <h4>Croissance Racinaire :</h4>
+                    <ul>
+                        <li class="text-secondary">Les racines reprennent leur croissance, absorbant des nutriments et de l'eau pour soutenir la croissance aérienne.</li>
+                    </ul>
+                </div>
+                <div class="partie-droite">
+                    <img src="/images/reveil.jpg" alt="Réveil végétatif">
+                </div>
+            </section>
+            <h2>Formation des Grappes Florales</h2>
+            <section id="formation">
+                <div class="partie-gauche">
+                    <p class="text-secondary">Après le réveil végétatif, l'olivier commence à former des grappes florales :</p>
+                    <h4>Développement des Bourgeons Floraux</h4>
+                    <ul>
+                        <li class="text-secondary">Les bourgeons se différencient en bourgeons floraux sous l'influence des températures et de la lumière.</li>
+                        <li class="text-secondary">Les grappes de fleurs, ou inflorescences, se développent le long des rameaux de l'année précédente.</li>
+                    </ul>
+                    <h4>Croissance des Bourgeons</h4>
+                    <ul>
+                        <li class="text-secondary">Les tiges des inflorescences s'allongent, portant plusieurs fleurs.</li>
+                    </ul>
+                </div>
+                <div class="partie-droite">
+                    <img src="/images/Formation-des-grepes-florales.jpg" alt="Formation des Grappes Florales">
+                </div>
+            </section>
+            <h2>Différenciation des Corolles</h2>
+            <section id="differenciation">
+                <div class="partie-gauche">
+                    <p class="text-secondary">Cette phase marque la maturation des fleurs dans les grappes florales</p>
+                    <h4>Formation des Pétales (Corolles)</h4>
+                    <ul>
+                        <li class="text-secondary">Les boutons floraux commencent à former les pétales, qui prennent leur forme définitive.</li>
+                        <li class="text-secondary">Les boutons floraux s'élargissent et les pétales deviennent visibles.</li>
+                    </ul>
+                    <h4>Préparation à la Floraison</h4>
+                    <ul>
+                        <li class="text-secondary">Les étamines (organes mâles) et le pistil (organe femelle) se développent et se préparent pour la pollinisation.</li>
+                    </ul>
+                </div>
+                <div class="partie-droite">
+                    <img src="/images/Differenciation.jpg" alt="Différenciation des Corolles">
+                </div>
+            </section>
+            <h2>Floraison</h2>
+            <section id="floraison">
+                <div class="partie-gauche">
+                    <p class="text-secondary">La floraison est une période critique où les fleurs s'ouvrent et la pollinisation a lieu :</p>
+                    <h4>Ouverture des Fleurs</h4>
+                    <ul>
+                        <li class="text-secondary">Les fleurs s'ouvrent complètement, exposant les étamines et le pistil.</li>
+                        <li class="text-secondary">Les stigmates deviennent réceptifs au pollen.</li>
+                    </ul>
+                    <h4>Pollinisation</h4>
+                    <ul>
+                        <li class="text-secondary">La pollinisation est principalement anémophile (par le vent), mais peut aussi être entomophile (par les insectes).</li>
+                        <li class="text-secondary">Si le pollen atteint le stigmate, il germe et forme un tube pollinique qui féconde l'ovule.</li>
+                    </ul>
+                </div>
+                <div class="partie-droite">
+                    <img src="/images/floraison.jpg" alt="Floraison">
+                </div>
+            </section>
+            <h2>Nouaison</h2>
+            <section id="nouaison">
+                <div class="partie-gauche">
+                    <p class="text-secondary">La nouaison suit la floraison et correspond à la transformation des fleurs fécondées en fruits :</p>
+                    <h4>Formation des Petits Fruits</h4>
+                    <ul>
+                        <li class="text-secondary">Les ovaires fécondés commencent à se développer en petits fruits.</li>
+                        <li class="text-secondary">Les fleurs non fécondées tombent de l'arbre.</li>
+                    </ul>
+                    <h4>Croissance Initiale des Fruits</h4>
+                    <ul>
+                        <li class="text-secondary">Les cellules des jeunes fruits se multiplient et s'agrandissent.</li>
+                    </ul>
+                </div>
+                <div class="partie-droite">
+                    <img src="/images/Nouaison.jpg" alt="Nouaison">
+                </div>
+            </section>
+            <h2>Grossissement</h2>
+            <section id="grossissement">
+                <div class="partie-gauche">
+                    <p class="text-secondary">Le grossissement des fruits est la période où les olives augmentent significativement en taille</p>
+                    <h4>Croissance en Volume</h4>
+                    <ul>
+                        <li class="text-secondary">Les cellules du fruit continuent de se diviser.</li>
+                        <li class="text-secondary">Les olives accumulent des nutriments, de l'eau et des réserves d'huile.</li>
+                    </ul>
+                    <h4>Développement de la Pulpe</h4>
+                    <ul>
+                        <li class="text-secondary">La pulpe des olives devient plus épaisse et charnue.</li>
+                    </ul>
+                </div>
+                <div class="partie-droite">
+                    <img src="/images/grossissement.jpg" alt="grossissement">
+                </div>
+            </section>
+            <h2>Maturité</h2>
+            <section id="maturite">
+                    <p class="text-secondary">La phase de maturité des olives peut être subdivisée en quatre stades distincts pour mieux comprendre le processus de maturation et optimiser le moment de la récolte.</p>
+                        <h3>Début de Maturité</h3>
+                        <section id="debut-maturite">
+                        <div class="partie-gauche">
+                            <h4>Changement Initial de Couleur</h4>
+                            <ul>
+                                <li class="text-secondary">Les olives commencent à passer du vert au jaune pâle.</li>
+                                <li class="text-secondary">La chlorophylle dans la peau des olives diminue, révélant d'autres pigments.</li>
+                            </ul>
+                            <h4>Accumulation Précoce d'Huile</h4>
+                            <ul>
+                                <li class="text-secondary">La synthèse d'huile commence dans les cellules de la pulpe.</li>
+                                <li class="text-secondary">La teneur en eau des olives est encore relativement élevée.</li>
+                            </ul>
+                            <h4>Test de Fermeté</h4>
+                            <ul>
+                                <li class="text-secondary">Les olives sont encore fermes au toucher.</li>
+                                <li class="text-secondary">Les producteurs peuvent commencer à tester la qualité de l'huile pour prévoir la récolte.</li>
+                            </ul>
+                        </div>
+                        <div class="partie-droite">
+                            <img src="/images/debut-maturite.jpg" alt="Debut de la maturité">
+                        </div>
+                        </section>
+                        <h3>Maturité 1</h3>
+                        <section id="maturite1">
+                        <div class="partie-gauche">
+                            <h4>Changement de Couleur Prononcé</h4>
+                            <ul>
+                                <li class="text-secondary">Les olives continuent de changer de couleur, passant au jaune doré.</li>
+                                <li class="text-secondary">La couleur devient plus uniforme sur la surface du fruit.</li>
+                            </ul>
+                            <h4>Augmentation de la Teneur en Huile</h4>
+                            <ul>
+                                <li class="text-secondary">La teneur en huile augmente considérablement.</li>
+                                <li class="text-secondary">Les olives commencent à perdre de l'eau, concentrant les huiles.</li>
+                            </ul>
+                            <h4>Texture de la Pulpe</h4>
+                            <ul>
+                                <li class="text-secondary">La pulpe devient légèrement plus tendre, mais reste ferme.</li>
+                                <li class="text-secondary">Les tests de qualité de l'huile montrent une augmentation des composés phénoliques.</li>
+                            </ul>
+                        </div>
+                        <div class="partie-droite">
+                            <img src="/images/maturité1.jpg" alt="Maturité 1">
+                        </div>
+                        </section>
+                        <h3>Maturité 2</h3>
+                        <section id="maturite2">
+                        <div class="partie-gauche">
+                            <h4>Couleur Tournant au Violet</h4>
+                            <ul>
+                                <li class="text-secondary">Les olives commencent à prendre une teinte violette.</li>
+                                <li class="text-secondary">La couleur peut varier entre les fruits en fonction de la variété et de l'exposition au soleil.</li>
+                            </ul>
+                            <h4>Maximisation de la Teneur en Huile</h4>
+                            <ul>
+                                <li class="text-secondary">La teneur en huile atteint son maximum.</li>
+                                <li class="text-secondary">La concentration en composés bénéfiques pour la santé, comme les polyphénols, est optimale.</li>
+                            </ul>
+                            <h4>Texture et Fermeté</h4>
+                            <ul>
+                                <li class="text-secondary">Les olives deviennent plus molles, mais conservent une certaine fermeté.</li>
+                                <li class="text-secondary">Le goût de l'huile est riche et complexe.</li>
+                            </ul>
+                        </div>
+                        <div class="partie-droite">
+                            <img src="/images/maturité2.jpg" alt="Maturité 2">
+                        </div>
+                        </section>
+                        <h3>Maturité 3</h3>
+                        <section id="maturite3">
+                        <div class="partie-gauche">
+                            <h4>Couleur Finale</h4>
+                            <ul>
+                                <li class="text-secondary">Les olives deviennent complètement noires.</li>
+                                <li class="text-secondary">La pigmentation est uniforme et intense.</li>
+                            </ul>
+                            <h4>Pleine Maturité de l'Huile</h4>
+                            <ul>
+                                <li class="text-secondary">La teneur en huile est stabilisée.</li>
+                                <li class="text-secondary">La pulpe est riche en huile et contient peu d'eau.</li>
+                            </ul>
+                            <h4>Changement de Texture</h4>
+                            <ul>
+                                <li class="text-secondary">Les olives deviennent très molles.</li>
+                                <li class="text-secondary">Les fruits sont prêts pour la récolte, offrant un rendement optimal en huile.</li>
+                            </ul>
+                        </div>
+                        <div class="partie-droite">
+                            <img src="/images/maturité3.jpg" alt="Maturité 3">
+                        </div>
+                        </section>
+            </section>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <a href="#stade-main" class="text-decoration-none text-center text-dark border bg-body-secondary p-2 rounded">Retour</a>
+            </div>
+            <div class="agenda" id="agenda">
+                <div>
+                    <h2 class="text-center my-5 fw-bold" style="color: var(--text-color); letter-spacing: 1px;">Nombre Moyen de Grappe Florales</h2>
+                </div>
+                <div class="chart-container">
+                    <canvas id="myBarChart"></canvas>
+                </div>
+            
+                <!-- Form to input new data -->
+                <% if (user && user.role === 'admin') { %>
+                    <form id="chartDataForm" class="p-3 mt-3 border rounded" style="width: 70%;">
+                        <h3 class="mb-3 fs-4 text-success text-center">Modifier les données</h3>
+                        <div style="height: 1px; width: 70%;" class="mx-auto my-3 bg-body-secondary"></div>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <div class="mb-3">
+                            <label for="month" class="form-label">Mois:</label>
+                            <select id="month" name="month" class="form-select">
+                                <option value="Janvier">Janvier</option>
+                                <option value="Février">Février</option>
+                                <option value="Mars">Mars</option>
+                                <option value="Avril">Avril</option>
+                                <option value="Mai">Mai</option>
+                                <option value="Juin">Juin</option>
+                                <option value="Juillet">Juillet</option>
+                                <option value="Aout">Aout</option>
+                                <option value="Septembre">Septembre</option>
+                                <option value="Octobre">Octobre</option>
+                                <option value="Novembre">Novembre</option>
+                                <option value="Decembre">Decembre</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="value" class="form-label">Valeur :</label>
+                            <input type="number" id="value" name="value" class="form-control" required>
+                        </div>
+                        <button type="submit" class="btn btn-success py-2 px-3 fs-5">Update</button>
+                    </div>
+                    </form>
+                    
+                <% } %>
+            
+                <script>
+                    // Initial chart data
+                    var defaultChartData = [10, 15, 20, 25, 30, 35, 40, 30, 25, 20, 15, 10];
+                                
+                    // Load chart data from sessionStorage or use default values
+                    var chartData = JSON.parse(sessionStorage.getItem('chartData')) || defaultChartData;
+                                
+                    // Custom y-axis labels
+                    var customLabels = ['0', '5', '10', '15', '20', '25', '30', '35', '40', '45', '50'];
+                                
+                    // Get the context of the canvas element
+                    var ctx = document.getElementById('myBarChart').getContext('2d');
+                                
+                    // Create a gradient color for the bars
+                    var gradientFill = ctx.createLinearGradient(0, 0, 0, 400);
+                    gradientFill.addColorStop(0, 'rgba(75, 192, 192, 0.2)');
+                    gradientFill.addColorStop(1, 'rgba(75, 192, 192, 0.7)');
+                                
+                    // Create a new bar chart instance
+                    var myBarChart = new Chart(ctx, {
+                        type: 'bar', // Specify the type of chart
+                        data: {
+                            labels: [
+                                'Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 
+                                'Juillet', 'Aout', 'Septembre', 'Octobre', 'Novembre', 'Decembre'
+                            ],
+                            datasets: [{
+                                label: 'Nombre Moyen de Grappe Florales',
+                                data: chartData,
+                                backgroundColor: gradientFill,
+                                borderColor: 'rgba(75, 192, 192, 1)',
+                                borderWidth: 2,
+                                hoverBackgroundColor: 'rgba(75, 192, 192, 0.5)',
+                                hoverBorderColor: 'rgba(75, 192, 192, 1)',
+                                hoverBorderWidth: 3
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            scales: {
+                                x: {
+                                    beginAtZero: true,
+                                    grid: {
+                                        display: false
+                                    },
+                                    ticks: {
+                                        color: '#333',
+                                        autoSkip: false,
+                                        maxRotation: 45,
+                                        minRotation: 0
+                                    }
+                                },
+                                y: {
+                                    beginAtZero: true,
+                                    grid: {
+                                        borderDash: [5, 5],
+                                        color: '#ddd'
+                                    },
+                                    ticks: {
+                                        color: '#333',
+                                        // Use callback to map customLabels
+                                        callback: function(value, index, values) {
+                                            var stepSize = 5; // Match the step size used below
+                                            return customLabels[index * stepSize / 5] || value;
+                                        },
+                                        stepSize: 5 // Ensure one step per label
+                                    }
+                                }
+                            },
+                            plugins: {
+                                legend: {
+                                    display: true,
+                                    position: 'top',
+                                    labels: {
+                                        color: '#333'
+                                    }
+                                },
+                                tooltip: {
+                                    callbacks: {
+                                        label: function(tooltipItem) {
+                                            return tooltipItem.label + ': ' + tooltipItem.raw + ' unités';
+                                        }
+                                    },
+                                    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+                                    titleColor: '#fff',
+                                    bodyColor: '#fff',
+                                    borderColor: 'rgba(0, 0, 0, 0.2)',
+                                    borderWidth: 1
+                                },
+                                animation: {
+                                    duration: 1500, // 1.5 seconds
+                                    easing: 'easeOutBounce'
+                                }
+                            }
+                        }
+                    });
+                                
+                    // Function to update chart data
+                    function updateChart(month, value) {
+                        var monthIndex = myBarChart.data.labels.indexOf(month);
+                        if (monthIndex !== -1) {
+                            myBarChart.data.datasets[0].data[monthIndex] = value;
+                            myBarChart.update();
+                
+                            // Save updated data to sessionStorage
+                            sessionStorage.setItem('chartData', JSON.stringify(myBarChart.data.datasets[0].data));
+                        }
+                    }
+                                
+                    // Handle form submission
+                    document.getElementById('chartDataForm').addEventListener('submit', function(e) {
+                        e.preventDefault();
+                        var month = document.getElementById('month').value;
+                        var value = parseInt(document.getElementById('value').value);
+                        updateChart(month, value);
+                    });
+                </script>
+                
+                
+                
+            </div>
+            
+       </main>
+    <script src="/scripts/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="fr" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/../images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/../public/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/../public/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="/../public/styles.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/footers/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <title>Stades Phénologiques de l'Olivier</title>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+      .bd-placeholder-img{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh !important; 
+        width: 100%;
+      }
+      #bg-1{
+        background-image: url(/images/bg-2.webp);
+      }
+      #bg-2{
+        background-image: url(/images/bg-1.jpg);
+      }
+      #bg-3{
+        background-image: url(/images/Youcode-2.jpg);
+      }
+     
+    </style>
+</head>
+<body class="light-mode">
+    <div class="site">
+      
+    <!--------------------------LA PARTIE MAIN---------------------------------------------------------------------------->
+    <!-- La bar de Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary position-fixed" style="width: 100%; z-index: 999; top: 0;">
+      <div class="container-fluid">
+          <a class="navbar-brand d-flex justify-content-between align-items-center" href="#">
+              <img src="../images/logo.png" alt="Logo du site" width="80" height="80" class="d-inline align-top">
+              <h1 class="f">OliZen</h1>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarsExample05">
+              <div class="container-fluid d-flex justify-content-between align-items-center">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="/index">Accueil</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/def">Definitions</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/recolte">Récolte</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/stade">Stades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/production">Production</a>
+                </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/contact">Contactez-nous</a>
+                  </li>
+                  </ul>
+                  <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+                  <button type="button" class="btn btn-warning py-2 me-2" id="navigateButton">Déconnexion</button>
+                  <div class="dropdown">
+                      <button class="btn btn-dark dropdown-toggle" type="button" id="themeDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                          Theme
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="themeDropdown">
+                          <li>
+                              <a class="dropdown-item d-flex justify-content-between align-items-center" href="#" id="lightMode">
+                                  <!-- Light Mode Icon -->
+                                  <span>Light Mode</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a class="dropdown-item d-flex justify-content-between align-items-center" href="#" id="darkMode">
+                                  <!-- Dark Mode Icon -->
+                                  <span>Dark Mode</span>
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+                </ul>
+              </div>
+          </div>
+      </div>
+  </nav>
+  <!--------------------------------------FIN NAVBAR-------------------------------------------------------------------------------------------------------->
+  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="height: 100vh;">
+        <div class="bd-placeholder-img" id="bg-1"></div>
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1 class="text-white">Bienvenue Avec OliZen</h1>
+            <p class="opacity-75 text-white">La Meilleure plateforme lorsqu'on parle de l'agriculture.</p>
+            <p><a class="btn btn-lg btn-primary" href="/contact">Contacter-nous</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" style="height: 100vh;">
+        <div class="bd-placeholder-img" id="bg-2"></div>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1 class="text-white">Stades Phénologiques de l'Olivier.</h1>
+            <p class="text-white">Notre page web avec tout ce que vous cherchez à propos le developpement des olives.</p>
+            <p><a class="btn btn-lg btn-primary" href="/def">Savoir plus</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" style="height: 100vh;">
+        <div class="bd-placeholder-img" id="bg-3"></div>
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1 class="text-white">YouCode</h1>
+            <p class="text-white">développer les compétences pour notre avenir.</p>
+            <p><a class="btn btn-lg btn-primary" href="https://ouassim-projet1.vercel.app/">Autre site</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+        <!--------------------------LA PARTIE INTERET---------------------------------------------------------------------------->
+        <div class="boite" id="interet">
+            <img src="https://picsum.photos/300" alt="image d'un vase">
+            <div class="text-interet">
+                <h1>Notre Intéret</h1>
+                <p>Notre intérêt est de fournir aux utilisateurs un site web dédié aux Stades Phénologiques de l'Olivier, les aidant à identifier ces plantes, à comprendre leur impact écologique et à apprendre des méthodes efficaces de gestion.</p>
+                <span id="trai-interet"></span>
+                <p>Notre site donne les détails de ce cycle .</p>
+            </div>
+        </div>
+        <!--------------------------LA PARTIE INTRODUCTION--------------------------------------------------------------->
+        <div class="container-fluid"></div>
+        <!--------------------------LA PARTIE FEATURES WITH TITLE--------------------------------------------------------------->
+        <div class="container px-4 py-5 ">
+            <!-- <h2 class="pb-2 border-bottom">Features with title</h2> -->
+        
+            <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5 text-ft">
+              <div class="col d-flex flex-column align-items-start gap-2" id="text-ft">
+                <h2 class="fw-bold text-body-emphasis">Stades de Développement de l'Olivier</h2>
+                <p class="text-body-secondary">C'est la partie parlant des différents stages du Cycle de Vie
+                    de l'Olivier , ainsi les étapes clés de la nourriture de cette plante</p>
+                <a href="#" class="btn btn-success btn-lg">Découvrez plus</a>
+              </div>
+        
+              <div class="col">
+                <div class="row row-cols-1 row-cols-sm-2 g-4">
+                  <div class="col d-flex flex-column gap-2">
+                    <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-success bg-gradient fs-4 rounded-3">
+                      <i class="fa-solid fa-plant-wilt"></i>
+                    </div>
+                    <h4 class="fw-semibold mb-0 text-body-emphasis">Débourrement</h4>
+                    <p class="text-body-secondary">Conditions climatiques nécessaires.</p>
+                  </div>
+        
+                  <div class="col d-flex flex-column gap-2">
+                    <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-success bg-gradient fs-4 rounded-3">
+                        <i class="fa-solid fa-tree"></i>
+                    </div>
+                    <h4 class="fw-semibold mb-0 text-body-emphasis">Floraison</h4>
+                    <p class="text-body-secondary">Facteurs influençant la floraison.</p>
+                  </div>
+        
+                  <div class="col d-flex flex-column gap-2">
+                    <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-success bg-gradient fs-4 rounded-3">
+                        <i class="fa-brands fa-pagelines"></i>
+                    </div>
+                    <h4 class="fw-semibold mb-0 text-body-emphasis">Nouaison</h4>
+                    <p class="text-body-secondary">Importance de la nouaison pour la production.</p>
+                  </div>
+                  
+                  <div class="col d-flex flex-column gap-2">
+                      <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-success bg-gradient fs-4 rounded-3">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <h4 class="fw-semibold mb-0 text-body-emphasis">Maturation</h4>
+                    <p class="text-body-secondary">Comment savoir les signes de maturité.</p>
+                </div>
+            </div>
+        </div>
+            </div>
+          </div>
+        <!--------------------------LA PARTIE MACHINE---------------------------------------------------------------------------->
+          <div class="tech">
+            <div class="tech-content">
+                <h2 class="tech-header">Les Différents Technologies et machines de recoltes d'olives</h2>
+                <button type="button" class="btn btn-secondary py-2" id="recolteButton">Savoir plus</button>
+            </div>
+          </div>
+        <!--------------------------LA PARTIE CARDS---------------------------------------------------------------------------->
+        <div class="container px-4 py-5" id="custom-cards">
+            <h2 class="pb-2 border-bottom">Production Dans le <span style="color: #e33;">Ma</span><span style="color: #191;">roc</span></h2>
+            
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+              <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('images/meknes.jpg'); background-size: cover;">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">Fes Meknes</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                        <img src="https://picsum.photos/300" alt="Meknes olives" width="32" height="32" class="rounded-circle border border-white">
+                      </li>
+                      <li class="d-flex align-items-center me-3">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                        <small>Meknes</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                        <!-- <small>more</small> -->
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('images/marrakech-safi.jpg');">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">Marrakech Safi</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                        <img src="https://picsum.photos/300" alt="Marrakech Safi" width="32" height="32" class="rounded-circle border border-white">
+                      </li>
+                      <li class="d-flex align-items-center me-3">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                        <small>Safi</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                        <small>4d</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('images/tadla-azilal.webp');">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">Tadla Azilal</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                        <img src="https://picsum.photos/300" alt="Tadla Azilal" width="32" height="32" class="rounded-circle border border-white">
+                      </li>
+                      <li class="d-flex align-items-center me-3">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                        <small>Azilal</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                        <small>5d</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!--------------------------LA PARTIE FOOTER---------------------------------------------------------------------------->
+        <div class="container-fluid">
+            <footer class="py-3 my-4">
+              <ul class="nav justify-content-center border-bottom pb-3 mb-3 footer-links">
+                <li class="nav-item"><a href="#" class="nav-link px-2">Accueil</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2">A Propos</a></li>
+              </ul>
+              <div class="d-flex justify-content-evenly align-items-center">
+                <p class="text-center">&copy; 2024 YouCode, Inc</p>
+                <ul class="nav justify-content-between align-items-center mb-3 social-media">
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><i class="fa-brands fa-facebook fs-4" id="facebook"></i></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><i class="fa-brands fa-youtube fs-4" id="youtube"></i></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><i class="fa-brands fa-github fs-4" id="github"></i></a></li>
+                  </ul>
+              </div>
+            </footer>
+          </div>   
+  <!-----------------------------------LA PARTIE SCRIPT------------------------------------------------------------------->
+
+  <script src="/scripts/main.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </div>
+</body>
+</html>

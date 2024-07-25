@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="fr" class="def">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/../images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/../public/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/../public/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="/../public/styles.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/footers/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <title>Description</title>
+</head>
+<body class="def">
+    
+        <!-- La bar de Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary position-fixed" style="width: 100%; z-index: 999; top: 0;">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex justify-content-between align-items-center" href="#">
+                    <img src="../images/logo.png" alt="Logo du site" width="80" height="80" class="d-inline align-top">
+                    <h1 class="f">OliZen</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarsExample05">
+                    <div class="container-fluid d-flex justify-content-between align-items-center">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/index">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/def">Definitions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/recolte">Récolte</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/stade">Stades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/production">Production</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact">Contactez-nous</a>
+                        </li>
+                        </ul>
+                        <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+                        <button type="button" class="btn btn-warning py-2 me-2" id="navigateButton">Déconnexion</button>
+                        <div class="dropdown">
+                            <button class="btn btn-dark dropdown-toggle" type="button" id="themeDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                Theme
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="themeDropdown">
+                                <li>
+                                    <a class="dropdown-item d-flex justify-content-between align-items-center" href="#" id="lightMode">
+                                        <!-- Light Mode Icon -->
+                                        <span>Light Mode</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex justify-content-between align-items-center" href="#" id="darkMode">
+                                        <!-- Dark Mode Icon -->
+                                        <span>Dark Mode</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    <!----------------------------------LA PARTIE SIDEBAR--------------------------------------------------------------------------------->
+    <div id="sidebar" class="d-flex flex-column flex-shrink-0 p-5 bg-body-tertiary border" style="width: 280px; position: fixed; top: 75px; left: 0; height: calc(100% - 75px);">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img src="/images/logo.png" width="75" height="75" alt="logo" class="bi pe-none me-2">
+          <span class="fs-4">Description</span>
+        </a>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+            <a href="#intro" class="nav-link link-body-emphasis" aria-current="page">
+                <i class="fa-solid fa-plant-wilt fs-5 me-3"></i>
+              <span>&nbsp;Introduction</span>
+            </a>
+          </li>
+          <li>
+            <a href="#desc" class="nav-link link-body-emphasis">
+                <i class="fa-regular fa-calendar fs-5 me-3"></i>
+              <span>&nbsp;Description de la plante</span>
+
+            </a>
+          </li>
+          <li>
+            <a href="#clas" class="nav-link link-body-emphasis">
+                <i class="fa-solid fa-gears fs-5 me-2"></i>
+              <span>Classification botanique</span>
+            </a>
+          </li>
+          <li>
+            <a href="#ol" class="nav-link link-body-emphasis">
+                <i class="fa-solid fa-bars-progress fs-5 me-2"></i>
+              <span>&nbsp;Olivier Marocain</span>
+            </a>
+          </li>
+          <li>
+            <a href="#val" class="nav-link link-body-emphasis">
+                <i class="fa-solid fa-arrows-spin fs-5 me-2"></i>
+              <span>&nbsp;Valeur nutritionelle</span>
+            </a>
+          </li>
+        </ul>
+        <hr>
+      </div>
+    <div class="def" style="margin-left: 300px;">
+    <!--------------------------------- LE CONTENU ----------------------------------------------------------------------------->
+      <div class="container mt-4 d-flex justify-content-center flex-column">
+
+    <!--------------------------------- Introduction ----------------------------------------------------------------------------->
+    <div class="my-5" id="intro" style="margin-top: 150px;">
+        <div class="mt-5">
+            <h2 class="text-center p-3 mt-5">Introduction</h2>
+            <div class="border p-3">
+                <div class="paragraphL">
+                    <p >
+                        L'olivier est un arbre à la longévité exceptionnelle qui atteint plus de 3000 ans
+                        qui produit des olives.
+                        Les olives sont les fruits de l’olivier.
+                        Elles appartiennent à un groupe de fruits appelés drupes – ou fruits à noyau – et sont apparentées aux mangues,
+                        cerises, pêches, amandes et pistaches.Les olives
+                        revêt une importance agricole majeure dans les régions méditerranéennes grâce à l'extraction de l'huile d'olive, 
+                        qui est l'un des principaux ingrédients des cuisines méditerranées et du Moyen-Orient. 
+                        Des milliers de cultivars d'oliviers sont reconnus.
+                        
+                    </p>
+                </div>
+                <img class="img" src="../images/olivier.jpg" alt="">
+
+                <img class="img" id="map" src="../images/map.png" alt="">
+                <div class="paragraphR">
+                    <p >
+                        Ces derniers peuvent être principalement utilisés pour la production d'huile,
+                        pour la consommation du fruit ou bien les deux. Les olives destinées à la consommation sont généralement appelées « olives de table ».
+                         Environ 80 % de toutes les olives récoltées sont néanmoins transformées en huile,
+                        et environ 20 % servent d'olives de table.
+                    </p>
+                </div>
+                
+                <div class="paragraphL">
+                    <p>
+                        Le fruit est une drupe dont la maturité s’effectue d’octobre à janvier selon les espèces et les conditions climatiques.
+                        On a pu voir qu’il existe plusieurs variétés (>2000).
+                        On constate les différences entre les variétés grâce au port plus ou moins haut, 
+                        plus ou moins retombant, la forme des feuilles, l’écorces lisse ou rugueuse, la taille des fruits,
+                        leur date de maturité,
+                        si l’espèce est autofertile, autostérile, la teneur et nature de l’huile…
+                    </p>
+                </div>
+                <img class="img" src="../images/oliTab.jpg" alt="">
+            </div>
+        </div>
+    </div>
+   <!----------------------     Description de la plante                -----------------------------------------> 
+    <div class="mb-5" id="desc">
+        <div class="mt-5">
+            <h2 class="text-center p-3">Description de la plante</h2>
+            <div class="border p-3">
+                <!-------Tronc div----------------->
+                <div class="tronc">
+                    <div class="paragraphR">
+                        <div>
+                            <h3>Le tronc</h3>
+                            <p>
+                                Chez les jeunes arbres le tronc est lisse, circulaire et gris-vert à sa dixième année, il devient noueux, 
+                                crevassé, fendu et élargi à la base. Il prend un teint gris foncé. Cet organe parfois énorme, 
+                                est un véritable accumulateur de réserves d’où sortent chaque année des rejets (Rugini et al., 1999). 
+                                Dans un environnement sec, le tronc développe une couche subéreuse assez épaisse,
+                                alors que chez les arbres irrigués,
+                                l’écorce est mince et les tissus sont souvent viables (Rugini et al., 2006).
+                            </p>
+                        </div>
+                     </div>
+                     <img class="img" id="tronc" src="../images/tronc.jpg" alt="">
+                </div>
+                <!------div système racinaire-->
+                <div class="sysRac">
+                    <div class="paragraphL">
+                        <div>
+                            <h3>Le système racinaire</h3>
+                            <p>
+                                Il est puissant et fasciculé, se prolonge à une profondeur de 5 à 7 m. 
+                                Le réseau de racines forme une couche ligneuse, 
+                                appelée la matte, dans laquelle s’accumulent des réserves et qui va permettre de puiser une très grande quantité d’eau dans le sol (Himour,
+                                 2006). Dans les sols très imperméables et aérés, le système radiculaire est pivotant. En revanche, dans les sols lourds, peu ou non aérés,
+                                 le système racinaire est fasciculé et profond (Saad, 2009; Meddad, 2010).
+                            </p>
+                        </div>
+                     </div>
+                     <img class="img"  src="../images/racine.jpg" alt="">
+                </div>
+
+
+                <!------Les rameaux-->
+                <div class="rameaux">
+                    <div class="paragraphR">
+                        <div>
+                            <h3>Les rameaux</h3>
+                            <p>
+                                Leur taille est de quelques dizaines de centimètres suivant la vigueur et la variété de l’arbre, 
+                                ils sont délimités à leur base par un entre-nœud marquant l’arrêt de la croissance hivernale.
+                                 Ces rameaux peuvent être:
+                                <ul>
+                                    <li>des gourmands vigoureux et verticaux: qu’on distingue à leur longueur très importante</li>
+                                    <li>des rameaux de prolongement des branches et de charpentes, se terminant par un bouquet de pousses (Leva et al., 2002).</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <img class="img"  src="../images/rameau.jpg" alt="">
+                </div>
+
+                <!------Les Feuilles -->
+                <div class="feuilles">
+                    <div class="paragraphL">
+                        <div>
+                            <h3>Les feuilles</h3>
+                            <p>
+                                Les feuilles sont épaisses, lancéolées, simples, opposées et de couleur verte. 
+                                Leur taille varie de 3 à 5 cm de long sur 1 à 1.5 de large (Bartolozzi et Fontanazza, 1999). 
+                                Le feuillage est persistant. Les feuilles vivent au moyenne 3 ans, puis jaunissent et tombent principalement en été (Cresti et al., 1996). 
+                                Le limbe coriace présente une face supérieure gris-verte, lisse et brillante. 
+                                La face inferieure est recouverte d’un duvet qui lui donne un aspect argenté.
+                            </p>
+                        </div>
+                    </div>
+                    <img class="img"  src="../images/feuille.jpg" alt="">
+                </div>
+
+                <div class="fleurs">
+                    <div class="paragraphR">
+                        <div>
+                            <h3>Les fleurs</h3>
+                            <p>
+                                Les fleurs sont petites, ovales, blanches et odorantes. 
+                                Elles sont disposées en grappes (Fig. 02) (en moyenne de 10 à 40) dressées à l’aisselle des feuilles (Fabbri et Benelli, 2000).
+                                L’olivier n’est pas mellifère, la fécondation ne dépend pas des insectes mais des vents et des courants d’air qui permette au pollen d’être échangé entre les fleurs. 
+                                Seulement 5% des fleurs donneront des fruits (Diaz et al., 2006).
+                            </p>
+                        </div>
+                    </div>
+                    <img class="img"  src="../images/fleur.jpg" alt="">
+                </div>
+
+                <div class="fruit">
+                    <div class="paragraph">
+                        <div>
+                            <h3>Les fleurs</h3>
+                            <p>
+                                L’olive est une drupe charnue, ovoïde, verte au début puis devient noire à maturité complète (Terral et al., 1996), 
+                                de dimensions variables selon les variétés (Saad, 2009). 
+                                Le fruit est composé de trois éléments (Rotondi et al. , 2003; Lumaret et al., 2004):
+                                <ul>
+                                    <li>
+                                        L’épicarpe (peau) recouverte d’une matière cireuse imperméable à l’eau (la pruine). 
+                                        Le changement de couleur est dû à une oxydation effectuée par des phénologie
+                                    </li>
+                                    <li>
+                                        Le mésocarpe (pulpe) charnue et riche en matière grasse stockée durant la lipogenèse. 
+                                        Le mésocarpe est constitué d’huile (22%), de l’eau (50%), de protéines (1,6%), 
+                                        de glucides (19,1%), de la cellulose (5,8%) et des minéraux (1,5%).
+                                    </li>
+                                    <li>
+                                        Le noyau dur, osseux, formé d’une enveloppe (endocarpe) et contient une amande avec deux ovaires (Fig.03), 
+                                        dont l’un est généralement stérile et non fonctionnel. 
+                                        La graine produit un embryon, qui donnera un nouvel olivier lorsque les conditions sont favorables.
+
+                                    </li>
+                                </ul>
+                            </p>
+                            <img class="center"  src="../images/fruit.jpg" alt="">
+                            <p>
+                                Les fruits n’apparaissent qu’après la septième année. Ensuite, 
+                                sa production augmente avec constance entre la septième et la trente-cinquième année. A cet âge, 
+                                il parvient à maturité et produit de manière régulière jusqu’à ses cent cinquante ans, 
+                                stade où il entre peu à peu dans sa période de sénescence (Avenard, 2008; Turan, 2011).
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+         </div>
+                 
+    </div>
+
+     <!----------------------     Classification Botanique               -----------------------------------------> 
+            
+     <div class="mb-5" id="clas">
+        <div class="mt-5">
+            <h2 class="text-center p-3">Classification botanique</h2>
+            <div class="border p-3">
+                <section class="table" id="tab">
+                    <div class="container">
+                        <table>
+                            <tr>
+                                <th>Embranchement:</th>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phanérogames</td>
+                            </tr>
+                            <tr>
+                                <th>Sous Embranchement:</th>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Angiospermes</td>
+                            </tr>
+                            <tr>
+                                <th>Classe:</th>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dicotylédones</td>
+                            </tr>
+                            <tr>
+                                <th>Famille:</th>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Oléacées</td>
+                            </tr>
+                            <tr>
+                                <th>Tribu:</th>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Oléinées</td>
+                            </tr>
+                            <tr>
+                                <th>Genre:</th>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Olea</td>
+                            </tr>
+                          </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+     <!----------------------    Olivier Marocain               -----------------------------------------> 
+            
+     <div class="mb-5" id="ol">
+        <div class="mt-5">
+            <h2 class="text-center p-3">Olivier Marocain</h2>
+            <div class="border p-3">
+                <p>
+                    Au Maroc, l’olivier est une culture importante, occupant une superficie de 560 000 hectares, 
+                    dont 220 000 hectares en zone irriguée1. 
+                    Voici quelques variétés d’oliviers cultivées et autochtones dans le pays :
+                    <ul>
+                        <li>
+                            Picholine Marocaine : reconnue pour sa saveur unique et sa polyvalence en cuisine, 
+                            en particulier dans la préparation de l’huile d’olive extra vierge de qualité supérieure.
+                        </li>
+                        <li>
+                           Variété Haouzia Menara : variété à double fin, huile et conserve, d’une richesse normale en huile.
+                        </li>
+                    </ul>
+                </p>
+                <div class="pic">
+                    <div class="column">
+                        <img class="img"  src="../images/pich.jpg" alt="">
+                    </div>
+                    <div class="column">
+                        <img class="img" src="../images/haou.jpg" alt="">
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+
+          <!----------------------Valeur nutritionelle d'olive             -----------------------------------------> 
+            
+     <div class="mb-5" id="val">
+        <div class="mt-5">
+            <h2 class="text-center p-3">Valeur nutritionelle</h2>
+            <div class="border p-3">
+                <div class="paragraph">
+                    <p>
+                        Les olives sont une bonne source de vitamines A, B, C, E et de minéraux (fer, sodium, phosphore, magnésium, potassium et iode).  
+                        Elles fournissent aussi de l’acide oléique, qui aide à réduire le taux de mauvais cholestérol ou “LDL”, et de fibres, qui favorisent le transit intestinal.
+                         Voici leurs composants:
+                     </p>
+                     <img src="../images/val.png" alt="">
+                </div>
+            </div>
+        </div>
+     </div>
+     </div>
+      </div>
+    </div>
+    <script src="/scripts/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
